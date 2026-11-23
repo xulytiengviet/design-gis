@@ -53,11 +53,11 @@ function showDetail(r) {
   $('detail').showModal();
 }
 function route() {
-  const id = ['cad', 'components', 'dia-chinh', 'qgis'].includes(
+  const id = ['atlas', 'cad', 'components', 'dia-chinh', 'qgis'].includes(
     location.hash.slice(1),
   )
     ? location.hash.slice(1)
-    : 'atlas';
+    : 'overview';
   for (const section of document.querySelectorAll('main>section'))
     section.hidden = section.id !== id;
   for (const a of document.querySelectorAll('nav a')) {
@@ -68,15 +68,17 @@ function route() {
 addEventListener('hashchange', route);
 route();
 try {
-  const [land, components, settings, cadastral, tools] = await Promise.all(
-    [
-      'data/land.json',
-      'data/components.json',
-      'settings.json',
-      'data/cadastral.json',
-      'data/qgis.json',
-    ].map(read),
-  );
+  const [land, components, settings, cadastral, tools, blocks] =
+    await Promise.all(
+      [
+        'data/land.json',
+        'data/components.json',
+        'settings.json',
+        'data/cadastral.json',
+        'data/qgis.json',
+        'cad/blocks.json',
+      ].map(read),
+    );
   for (const key of Object.keys(themes)) $('theme').add(new Option(key, key));
   const themeKey = 'design-gis:' + location.pathname;
   function paint(theme, dark) {
@@ -192,6 +194,38 @@ try {
   $('fontInput').oninput = renderFont;
   $('dcQuery').oninput = renderCadastral;
   renderCadastral();
+  for (const [title, rows, destination] of [
+    ['Mục quy hoạch', land, 'atlas'],
+    ['Mục địa chính chọn lọc', cadastral, 'dia-chinh'],
+    ['Block CAD', blocks, 'cad'],
+    ['Công cụ QGIS', tools, 'qgis'],
+    ['Component UI', components, 'components'],
+  ]) {
+    const card = link('', '#' + destination);
+    card.append(el('strong', rows.length), el('span', title));
+    $('metrics').append(card);
+  }
+  const groups = Object.entries(sections).map(([key, label]) => ({
+    key,
+    label,
+    count: land.filter(row => String(row.section) === key).length,
+  }));
+  for (const {key, label, count} of groups) {
+    const button = el('button');
+    const bar = el('span');
+    bar.className = 'chart-bar';
+    bar.style.width =
+      (100 * count) / Math.max(1, ...groups.map(group => group.count)) + '%';
+    button.append(el('span', label), el('b', count), bar);
+    button.onclick = () => {
+      $('search').value = '';
+      $('scale').value = key;
+      renderLand();
+      location.hash = 'atlas';
+      requestAnimationFrame(() => $('scale').focus());
+    };
+    $('distribution').append(button);
+  }
   $('search').oninput = renderLand;
   $('scale').onchange = renderLand;
   $('componentQuery').oninput = renderComponents;

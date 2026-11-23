@@ -1,21 +1,17 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-
-# Keep the retired GitHub Pages origin as one small, durable compatibility page.
-# Stable docs, Storybook, and Sandbox are built and served by Vercel.
-name: Publish GitHub Pages landing
+name: Publish Design GIS dashboard
 
 on:
   push:
     branches: ['main']
     paths:
-      - '.github/pages/**'
+      - 'gis/**'
       - '.github/workflows/pages-deploy.yml'
   workflow_dispatch:
 
 permissions: {}
 
 concurrency:
-  group: github-pages-landing
+  group: github-pages
   cancel-in-progress: true
 
 jobs:
@@ -32,18 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Stage landing and deep-link recovery page
-        run: |
-          mkdir pages-dist
-          cp -R .github/pages/. pages-dist/
-          cp .github/pages/index.html pages-dist/404.html
-
       - uses: actions/configure-pages@v6
 
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: pages-dist
+          path: gis
 
-      - name: Deploy landing
+      - name: Deploy dashboard
         id: deployment
         uses: actions/deploy-pages@v5

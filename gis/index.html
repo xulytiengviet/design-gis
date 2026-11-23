@@ -3,15 +3,15 @@
   <meta charset="utf-8" /><meta
     name="viewport"
     content="width=device-width,initial-scale=1" />
-  <title>Design GIS · Atlas ký hiệu quy hoạch</title
+  <title>Design GIS · Bảng điều khiển</title
   ><link rel="stylesheet" href="style.css" />
   <a class="skip" href="#main">Đến nội dung</a>
   <header>
     <div class="brand"><span aria-hidden="true">▧</span> Design GIS</div>
     <nav aria-label="Thư viện">
-      <a href="#atlas">Quy hoạch</a><a href="#dia-chinh">Địa chính</a
-      ><a href="#qgis">QGIS</a><a href="#components">Component</a
-      ><a href="#cad">CAD &amp; hồ sơ</a>
+      <a href="#overview">Tổng quan</a><a href="#atlas">Quy hoạch</a
+      ><a href="#dia-chinh">Địa chính</a><a href="#qgis">QGIS</a
+      ><a href="#components">Component</a><a href="#cad">CAD &amp; hồ sơ</a>
     </nav>
     <label class="theme"
       >Theme
@@ -19,7 +19,59 @@
     ><button id="dark" aria-pressed="false">Chế độ tối</button>
   </header>
   <main id="main">
-    <section id="atlas">
+    <section id="overview">
+      <div class="dash-hero">
+        <p class="eyebrow">DESIGN GIS / VIỆT NAM</p>
+        <h1>Bảng điều khiển GIS</h1>
+        <p>
+          Tra cứu ký hiệu bản đồ, đối chiếu quy cách bản vẽ và chọn công cụ xử
+          lý hồ sơ.
+        </p>
+        <a class="hero-action" href="#atlas">Tra ký hiệu quy hoạch →</a>
+      </div>
+      <div
+        id="metrics"
+        class="metrics"
+        aria-label="Số lượng theo danh mục"></div>
+      <div class="dash-grid">
+        <article class="dash-panel">
+          <h2>Ký hiệu theo loại đồ án</h2>
+          <p>
+            Chọn một hàng để mở atlas theo đúng tỷ lệ. Số bên phải là số mục sử
+            dụng đất trong danh mục.
+          </p>
+          <div id="distribution"></div>
+        </article>
+        <article class="dash-panel">
+          <h2>Hồ sơ và công cụ</h2>
+          <a href="#dia-chinh"
+            ><strong>Đọc nhãn và ranh thửa</strong
+            ><small>Địa chính · Phụ lục 22</small></a
+          >
+          <a href="#cad"
+            ><strong>Lập bản vẽ CAD</strong
+            ><small>Block cấp nước, tên bản vẽ và hồ sơ PCCC</small></a
+          >
+          <a href="#qgis"
+            ><strong>Kiểm tra dữ liệu QGIS</strong
+            ><small>File Geodatabase, hệ tọa độ và phông tiếng Việt</small></a
+          >
+          <a href="#components"
+            ><strong>Thiết kế giao diện</strong
+            ><small>Component React, API và CLI</small></a
+          >
+        </article>
+      </div>
+      <article class="dash-panel sources">
+        <h2>Tài liệu đối chiếu</h2>
+        <a href="sources/16-bxd-1.pdf">Phụ lục I · Ký hiệu quy hoạch</a>
+        <a href="sources/16-bxd-2.pdf">Phụ lục II · Cơ sở dữ liệu quy hoạch</a>
+        <a href="sources/26-btnmt.pdf#page=91"
+          >Phụ lục 22 · Ký hiệu địa chính</a
+        >
+      </article>
+    </section>
+    <section id="atlas" hidden>
       <p class="eyebrow">THƯ VIỆN BẢN ĐỒ / PHỤ LỤC I</p>
       <h1>Atlas ký hiệu quy hoạch</h1>
       <p class="intro">
