@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1" />
+  <title>Design GIS · Atlas ký hiệu quy hoạch</title
+  ><link rel="stylesheet" href="style.css" />
+  <a class="skip" href="#main">Đến nội dung</a>
+  <header>
+    <div class="brand"><span aria-hidden="true">▧</span> Design GIS</div>
+    <nav aria-label="Thư viện">
+      <a href="#atlas">Atlas ký hiệu</a><a href="#components">Component</a
+      ><a href="#cad">CAD &amp; hồ sơ</a>
+    </nav>
+    <label class="theme"
+      >Theme
+      <select id="theme"></select></label
+    ><button id="dark" aria-pressed="false">Chế độ tối</button>
+  </header>
+  <main id="main">
+    <section id="atlas">
+      <p class="eyebrow">THƯ VIỆN BẢN ĐỒ / PHỤ LỤC I</p>
+      <h1>Atlas ký hiệu quy hoạch</h1>
+      <p class="intro">
+        Tra ý nghĩa, phân lớp và mẫu tô theo loại đồ án và giai đoạn quy hoạch.
+      </p>
+      <div class="workspace">
+        <aside>
+          <h2>Bộ lọc</h2>
+          <label
+            >Tìm ký hiệu<input
+              id="search"
+              type="search"
+              placeholder="Tên đất, layer, mã màu…" /></label
+          ><label
+            >Loại đồ án và tỷ lệ<select id="scale">
+              <option value="">Tất cả tỷ lệ</option>
+            </select></label
+          >
+          <p><a href="data/land.csv" download>Tải bảng màu CSV ↓</a></p>
+        </aside>
+        <div class="sheet">
+          <div class="sheethead">
+            <h2>Danh mục sử dụng đất</h2>
+            <output id="count" aria-live="polite"></output>
+          </div>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Loại đất</th>
+                  <th scope="col">Index</th>
+                  <th scope="col">Mẫu theo giai đoạn</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="components" hidden>
+      <p class="eyebrow">ASTRYX / REACT</p>
+      <h1>Component giao diện</h1>
+      <p class="intro">
+        Tra API của từng component và lệnh dùng trong terminal.
+      </p>
+      <label
+        >Tìm component<input
+          type="search"
+          id="componentQuery"
+          placeholder="Button, Table, Menu…"
+      /></label>
+      <div id="cards" class="cards"></div>
+    </section>
+    <section id="cad" hidden>
+      <p class="eyebrow">CAD / CƠ SỞ DỮ LIỆU</p>
+      <h1>Bản vẽ và hồ sơ GIS</h1>
+      <div class="cards">
+        <article>
+          <h2>Thư viện CAD</h2>
+          <p>
+            15 block cấp nước theo ba giai đoạn ở trang 51, ba lớp ranh giới ở
+            trang 5 và các lớp đất 1/500. Hình học được dựng lại từ PDF, kích
+            thước chèn cần hiệu chỉnh theo bản vẽ.
+          </p>
+          <a href="cad/thu-vien.dwg" download>Tải DWG</a> ·
+          <a href="cad/thu-vien.dxf" download>Tải DXF</a>
+          <p><a href="cad/blocks.json">Danh mục block</a></p>
+        </article>
+        <article>
+          <h2>Đặt tên bản vẽ</h2>
+          <p>
+            Ghép số hiệu với tên tiếng Việt viết hoa không dấu. Ví dụ
+            <code>QH05-SO DO DINH HUONG PHAT TRIEN KHONG GIAN.dwg</code>.
+          </p>
+          <a href="sources/16-bxd-1.pdf#page=1">Phụ lục I · trang 1</a>
+        </article>
+        <article>
+          <h2>Lớp cấp nước PCCC</h2>
+          <p>
+            Bảng lớp tham khảo tại Phụ lục II ghi
+            <code>CongtrinhCapNuocPCCC_P</code> cho điểm và
+            <code>CongtrinhCapNuocPCCC_A</code> cho vùng. Chọn đúng bộ dữ liệu
+            hiện trạng hoặc quy hoạch, đối chiếu nội dung PCCC với cấp độ đồ án.
+          </p>
+          <a href="sources/16-bxd-2.pdf#page=8">Hiện trạng · trang 8</a> ·
+          <a href="sources/16-bxd-2.pdf#page=11">Quy hoạch · trang 11</a>
+        </article>
+        <article>
+          <h2>Quy cách hình học</h2>
+          <p>
+            Đường tuyến dùng polyline liên tục. Vùng có biên khép kín. Đối tượng
+            điểm dùng block có điểm chèn phù hợp với hình dạng ký hiệu. Đặt
+            thuộc tính thể hiện theo layer.
+          </p>
+          <a href="sources/16-bxd-1.pdf#page=1">Phụ lục I · trang 1</a>
+        </article>
+        <article>
+          <h2>Bảng ký hiệu đầy đủ</h2>
+          <p>
+            Đối chiếu bố cục, ký hiệu chung và toàn bộ bảng hạ tầng kỹ thuật
+            trong PDF gốc.
+          </p>
+          <a href="sources/16-bxd-1.pdf#page=3">Bố cục · trang 3</a> ·
+          <a href="sources/16-bxd-1.pdf#page=43">Hạ tầng · trang 43</a>
+        </article>
+        <article>
+          <h2>Văn bản sửa đổi</h2>
+          <p>
+            Điều 1 khoản 7 Thông tư 43/2025/TT-BXD cập nhật thuật ngữ tại Mục 7
+            Phụ lục I và Phần 2, Phần 3 Phụ lục II. Hai PDF đính kèm là bản ban
+            hành năm 2025.
+          </p>
+          <a
+            href="https://congbao.chinhphu.vn/tai-ve-van-ban-so-43-2025-tt-bxd-46838-60369?format=pdf"
+            >Đọc Công báo</a
+          >
+        </article>
+      </div>
+    </section>
+    <p role="alert" id="error"></p>
+  </main>
+  <dialog id="detail" aria-labelledby="detailTitle">
+    <form method="dialog">
+      <button aria-label="Đóng chi tiết">Đóng ×</button>
+    </form>
+    <div id="detailBody"></div>
+  </dialog>
+  <script type="module" src="app.mjs"></script>
+</html>

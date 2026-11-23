@@ -22,6 +22,10 @@ An open source design system that's fully customizable and built for how we buil
 
 </div>
 
+## Design GIS · Bộ template quy hoạch Việt Nam
+
+[Bộ template, CLI và hướng dẫn chạy](gis/README.md) · [DWG](gis/cad/thu-vien.dwg) · [Bảng màu và mẫu tô](gis/data/land.csv). Atlas tra 178 dòng sử dụng đất theo tỷ lệ, giai đoạn và trang Phụ lục I. Hai template React hỗ trợ lập tên bản vẽ và tra block cấp nước.
+
 ## Overview
 
 Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.

@@ -1,0 +1,92 @@
+[
+  {
+    "block": "HT_NHA_MAY",
+    "name": "Nhà máy nước",
+    "page": 51,
+    "layer": "HT_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDD_NHA_MAY",
+    "name": "Nhà máy nước",
+    "page": 51,
+    "layer": "QHDD_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDH_NHA_MAY",
+    "name": "Nhà máy nước",
+    "page": 51,
+    "layer": "QHDH_HTKT_CN_Tram"
+  },
+  {
+    "block": "HT_BOM_CAP_1",
+    "name": "Trạm bơm cấp 1",
+    "page": 51,
+    "layer": "HT_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDD_BOM_CAP_1",
+    "name": "Trạm bơm cấp 1",
+    "page": 51,
+    "layer": "QHDD_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDH_BOM_CAP_1",
+    "name": "Trạm bơm cấp 1",
+    "page": 51,
+    "layer": "QHDH_HTKT_CN_Tram"
+  },
+  {
+    "block": "HT_BOM_TANG_AP",
+    "name": "Trạm bơm tăng áp",
+    "page": 51,
+    "layer": "HT_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDD_BOM_TANG_AP",
+    "name": "Trạm bơm tăng áp",
+    "page": 51,
+    "layer": "QHDD_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDH_BOM_TANG_AP",
+    "name": "Trạm bơm tăng áp",
+    "page": 51,
+    "layer": "QHDH_HTKT_CN_Tram"
+  },
+  {
+    "block": "HT_BOM_GIENG",
+    "name": "Trạm bơm giếng",
+    "page": 51,
+    "layer": "HT_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDD_BOM_GIENG",
+    "name": "Trạm bơm giếng",
+    "page": 51,
+    "layer": "QHDD_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDH_BOM_GIENG",
+    "name": "Trạm bơm giếng",
+    "page": 51,
+    "layer": "QHDH_HTKT_CN_Tram"
+  },
+  {
+    "block": "HT_DAI_NUOC",
+    "name": "Đài nước, bể chứa nước",
+    "page": 51,
+    "layer": "HT_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDD_DAI_NUOC",
+    "name": "Đài nước, bể chứa nước",
+    "page": 51,
+    "layer": "QHDD_HTKT_CN_Tram"
+  },
+  {
+    "block": "QHDH_DAI_NUOC",
+    "name": "Đài nước, bể chứa nước",
+    "page": 51,
+    "layer": "QHDH_HTKT_CN_Tram"
+  }
+]

@@ -1,0 +1,179 @@
+﻿id,name,section,page,layer,aci,rgb,hatch
+pl1-8-1,Đơn vị ở,2,8,DAT_DD_Donvio,30,"255,127,0",hatch/page-8.svg#pl1-8-1
+pl1-8-2,Hỗn hợp (đơn vị ở và dịch vụ công cộng đô thị),2,8,DAT_DD_Honhop,22,"165,41,0",hatch/page-8.svg#pl1-8-2
+pl1-8-3,Dịch vụ công cộng đô thị,2,8,DAT_DD_DVCCdothi,1,"255,0,0",hatch/page-8.svg#pl1-8-3
+pl1-8-4,"Cơ quan, trụ sở đô thị",2,8,DAT_DD_Coquandothi,34,"127,63,0",hatch/page-8.svg#pl1-8-4
+pl1-8-5,Cây xanh sử dụng công cộng đô thị,2,8,DAT_DD_CayxanhCCdothi,72,"82,165,0",hatch/page-8.svg#pl1-8-5
+pl1-8-6,Giao thông đô thị,2,8,DAT_DD_Giaothongdothi,8,"128,128,128",hatch/page-8.svg#pl1-8-6
+pl1-8-7,Hạ tầng kỹ thuật khác cấp đô thị,2,8,DAT_DD_HTkhacdothi,195,"95,63,127",hatch/page-8.svg#pl1-8-7
+pl1-8-8,"Sản xuất công nghiệp, kho tàng",2,8,DAT_NDD_Congnghiep,192,"82,0,165",hatch/page-8.svg#pl1-8-8
+pl1-8-9,"Trung tâm đào tạo, nghiên cứu",2,8,DAT_NDD_Daotao,144,"0,95,127",hatch/page-8.svg#pl1-8-9
+pl1-9-1,"Cơ quan, trụ sở ngoài đô thị",2,9,DAT_NDD_Coquan,46,"76,57,0",hatch/page-9.svg#pl1-9-1
+pl1-9-2,"Dịch vụ, du lịch",2,9,DAT_NDD_Dulich,210,"255,0,255",hatch/page-9.svg#pl1-9-2
+pl1-9-3,Trung tâm y tế,2,9,DAT_NDD_Yte,220,"255,0,191",hatch/page-9.svg#pl1-9-3
+pl1-9-4,"Trung tâm văn hóa, thể dục thể thao",2,9,DAT_NDD_Vanhoathethao,94,"0,127,0",hatch/page-9.svg#pl1-9-4
+pl1-9-5,Cây xanh sử dụng hạn chế,2,9,DAT_NDD_CayxanhSDHC,94,"0,127,0",hatch/page-9.svg#pl1-9-5
+pl1-9-6,Cây xanh chuyên dụng,2,9,DAT_NDD_CayxanhCD,126,"0,76,57",hatch/page-9.svg#pl1-9-6
+pl1-9-7,"Di tích, tôn giáo",2,9,DAT_NDD_Ditich,16,"76,0,0",hatch/page-9.svg#pl1-9-7
+pl1-9-8,Điểm dân cư nông thôn,2,9,DAT_NDD_DancuNT,57,"76,76,38",hatch/page-9.svg#pl1-9-8
+pl1-9-9,An ninh,2,9,DAT_NDD_Anninh,64,"95,127,0",hatch/page-9.svg#pl1-9-9
+pl1-9-10,Quốc phòng,2,9,DAT_NDD_Quocphong,79,"28,38,19",hatch/page-9.svg#pl1-9-10
+pl1-9-11,Giao thông đối ngoại,2,9,DAT_NDD_GiaothongDN,251,"101,101,101",hatch/page-9.svg#pl1-9-11
+pl1-10-1,Hạ tầng kỹ thuật khác ngoài đô thị,2,10,DAT_NDD_HTkhacdoingoai,199,"28,19,88",hatch/page-10.svg#pl1-10-1
+pl1-10-2,Sản xuất nông nghiệp,2,10,DAT_NNK_Nongnghiep,3,"0,255,0",hatch/page-10.svg#pl1-10-2
+pl1-10-3,Rừng đặc dụng,2,10,DAT_NNK_Rungdacdung,148,"0,28,38",hatch/page-10.svg#pl1-10-3
+pl1-10-4,Rừng phòng hộ,2,10,DAT_NNK_Rungphongho,129,"19,88,88",hatch/page-10.svg#pl1-10-4
+pl1-10-5,Rừng sản xuất,2,10,DAT_NNK_Rungsanxuat,107,"38,76,47",hatch/page-10.svg#pl1-10-5
+pl1-10-6,Nuôi trồng thủy sản,2,10,DAT_NNK_Thuysan,150,"0,127,255",hatch/page-10.svg#pl1-10-6
+pl1-10-7,Chưa sử dụng,2,10,DAT_NNK_Chuasudung,9,"192,192,192",hatch/page-10.svg#pl1-10-7
+pl1-10-8,"Hồ, ao, đầm",2,10,DAT_NNK_Honuoc,154,"0,63,127",hatch/page-10.svg#pl1-10-8
+pl1-10-9,"Sông, suối, kênh, rạch",2,10,DAT_NNK_Songsuoi,152,"0,82,165",hatch/page-10.svg#pl1-10-9
+pl1-10-10,Mặt nước ven biển,2,10,DAT_NNK_Matnuocbien,152,"0,82,165",hatch/page-10.svg#pl1-10-10
+pl1-13-1,Nhóm nhà ở,3,13,DAT_DD_Nhomnhao,42,"165,124,0",hatch/page-13.svg#pl1-13-1
+pl1-13-2,Hỗn hợp nhóm nhà ở và dịch vụ,3,13,DAT_DD_Honhop_Nhomo,22,"165,41,0",hatch/page-13.svg#pl1-13-2
+pl1-13-3,Trường THPT,3,13,DAT_DD_TruongTHPT,24,"127,31,0",hatch/page-13.svg#pl1-13-3
+pl1-13-4,"Trường THCS, tiểu học, mầm non",3,13,DAT_DD_Truonghoc,15,"127,63,63",hatch/page-13.svg#pl1-13-4
+pl1-13-5,Dịch vụ công cộng khác cấp đô thị,3,13,DAT_DD_DVCCdothi,1,"255,0,0",hatch/page-13.svg#pl1-13-5
+pl1-13-6,"Cơ quan, trụ sở đô thị",3,13,DAT_DD_Coquandothi,34,"127,63,0",hatch/page-13.svg#pl1-13-6
+pl1-13-7,Cây xanh sử dụng công cộng cấp đô thị,3,13,DAT_DD_CayxanhCCdothi,72,"82,165,0",hatch/page-13.svg#pl1-13-7
+pl1-13-8,Giao thông đô thị,3,13,DAT_DD_Giaothongdothi,8,"128,128,128",hatch/page-13.svg#pl1-13-8
+pl1-13-9,Hạ tầng kỹ thuật khác cấp đô thị,3,13,DAT_DD_HTkhacdothi,195,"95,63,127",hatch/page-13.svg#pl1-13-9
+pl1-14-1,"Sản xuất công nghiệp, kho tàng",3,14,DAT_NDD_Congnghiep,192,"82,0,165",hatch/page-14.svg#pl1-14-1
+pl1-14-2,"Trung tâm đào tạo, nghiên cứu",3,14,DAT_NDD_Daotao,144,"0,95,127",hatch/page-14.svg#pl1-14-2
+pl1-14-3,"Cơ quan, trụ sở ngoài đô thị",3,14,DAT_NDD_Coquan,46,"76,57,0",hatch/page-14.svg#pl1-14-3
+pl1-14-4,"Dịch vụ, du lịch",3,14,DAT_NDD_Dulich,210,"255,0,255",hatch/page-14.svg#pl1-14-4
+pl1-14-5,Trung tâm y tế,3,14,DAT_NDD_Yte,220,"255,0,191",hatch/page-14.svg#pl1-14-5
+pl1-14-6,"Trung tâm văn hóa, thể dục thể thao",3,14,DAT_NDD_Vanhoathethao,94,"0,127,0",hatch/page-14.svg#pl1-14-6
+pl1-14-7,Cây xanh sử dụng hạn chế,3,14,DAT_NDD_CayxanhSDHC,94,"0,127,0",hatch/page-14.svg#pl1-14-7
+pl1-14-8,Cây xanh chuyên dụng,3,14,DAT_NDD_CayxanhCD,126,"0,76,57",hatch/page-14.svg#pl1-14-8
+pl1-14-9,"Di tích, tôn giáo",3,14,DAT_NDD_Ditich,16,"76,0,0",hatch/page-14.svg#pl1-14-9
+pl1-14-10,An ninh,3,14,DAT_NDD_Anninh,64,"95,127,0",hatch/page-14.svg#pl1-14-10
+pl1-15-1,Quốc phòng,3,15,DAT_NDD_Quocphong,79,"28,38,19",hatch/page-15.svg#pl1-15-1
+pl1-15-2,Giao thông đối ngoại,3,15,DAT_NDD_GiaothongDN,251,"101,101,101",hatch/page-15.svg#pl1-15-2
+pl1-15-3,Hạ tầng kỹ thuật khác ngoài đô thị,3,15,DAT_NDD_HTkhacdoingoai,199,"28,19,88",hatch/page-15.svg#pl1-15-3
+pl1-15-4,Sản xuất nông nghiệp,3,15,DAT_NNK_Nongnghiep,3,"0,255,0",hatch/page-15.svg#pl1-15-4
+pl1-15-5,Rừng đặc dụng,3,15,DAT_NNK_Rungdacdung,148,"0,28,38",hatch/page-15.svg#pl1-15-5
+pl1-15-6,Rừng phòng hộ,3,15,DAT_NNK_Rungphongho,129,"19,88,88",hatch/page-15.svg#pl1-15-6
+pl1-15-7,Rừng sản xuất,3,15,DAT_NNK_Rungsanxuat,107,"38,76,47",hatch/page-15.svg#pl1-15-7
+pl1-15-8,Nuôi trồng thủy sản,3,15,DAT_NNK_Thuysan,150,"0,127,255",hatch/page-15.svg#pl1-15-8
+pl1-16-1,Chưa sử dụng,3,16,DAT_NNK_Chuasudung,9,"192,192,192",hatch/page-16.svg#pl1-16-1
+pl1-16-2,"Hồ, ao, đầm",3,16,DAT_NNK_Honuoc,154,"0,63,127",hatch/page-16.svg#pl1-16-2
+pl1-16-3,"Sông, suối, kênh, rạch",3,16,DAT_NNK_Songsuoi,152,"0,82,165",hatch/page-16.svg#pl1-16-3
+pl1-16-4,Mặt nước ven biển,3,16,DAT_NNK_Matnuocbien,152,"0,82,165",hatch/page-16.svg#pl1-16-4
+pl1-19-1,Nhóm nhà ở,4,19,DAT_O_Nhomnhao,42,"165,124,0",hatch/page-19.svg#pl1-19-1
+pl1-19-2,Hỗn hợp nhóm nhà ở và dịch vụ,4,19,DAT_O_Honhop_Nhomo,22,"165,41,0",hatch/page-19.svg#pl1-19-2
+pl1-19-3,"Làng xóm, dân cư nông thôn",4,19,DAT_O_Langxom,57,"76,76,38",hatch/page-19.svg#pl1-19-3
+pl1-19-4,Y tế,4,19,DAT_HTXH_Yte,220,"255,0,191",hatch/page-19.svg#pl1-19-4
+pl1-19-5,Văn hóa,4,19,DAT_HTXH_Vanhoa,243,"165,82,103",hatch/page-19.svg#pl1-19-5
+pl1-19-6,Thể dục thể thao,4,19,DAT_HTXH_Theducthethao,94,"0,127,0",hatch/page-19.svg#pl1-19-6
+pl1-19-7,Trường THPT,4,19,DAT_HTXH_TruongTHPT,24,"127,31,0",hatch/page-19.svg#pl1-19-7
+pl1-19-8,"Trường THCS, tiểu học, mầm non",4,19,DAT_HTXH_Truonghoc,15,"127,63,63",hatch/page-19.svg#pl1-19-8
+pl1-19-9,Cây xanh sử dụng công cộng,4,19,DAT_HTXH_CayxanhCC,72,"82,165,0",hatch/page-19.svg#pl1-19-9
+pl1-20-1,Cây xanh sử dụng hạn chế,4,20,DAT_Cayxanhhanche,94,"0,127,0",hatch/page-20.svg#pl1-20-1
+pl1-20-2,Cây xanh chuyên dụng,4,20,DAT_Cayxanhchuyendung,126,"0,76,57",hatch/page-20.svg#pl1-20-2
+pl1-20-3,"Sản xuất công nghiệp, kho bãi",4,20,DAT_SX_Congnghiep,192,"82,0,165",hatch/page-20.svg#pl1-20-3
+pl1-20-4,"Khai thác, chế biến khoáng sản, sản xuất vật liệu xây dựng",4,20,DAT_SX_Vatlieu,175,"63,63,127",hatch/page-20.svg#pl1-20-4
+pl1-20-5,"Đào tạo, nghiên cứu",4,20,DAT_DaotaoNC,144,"0,95,127",hatch/page-20.svg#pl1-20-5
+pl1-20-6,"Cơ quan, trụ sở",4,20,DAT_Coquan,34,"127,63,0",hatch/page-20.svg#pl1-20-6
+pl1-20-7,Khu dịch vụ,4,20,DAT_Dichvu,12,"165,0,0",hatch/page-20.svg#pl1-20-7
+pl1-20-8,Khu dịch vụ du lịch,4,20,DAT_Dulich,210,"255,0,255",hatch/page-20.svg#pl1-20-8
+pl1-20-9,"Di tích, tôn giáo",4,20,DAT_Ditich_tongiao,16,"76,0,0",hatch/page-20.svg#pl1-20-9
+pl1-20-10,An ninh,4,20,DAT_Anninh,64,"95,127,0",hatch/page-20.svg#pl1-20-10
+pl1-21-1,Quốc phòng,4,21,DAT_Quocphong,79,"28,38,19",hatch/page-21.svg#pl1-21-1
+pl1-21-2,Đường giao thông,4,21,DAT_HTKT_DuongGT,251,"101,101,101",hatch/page-21.svg#pl1-21-2
+pl1-21-3,Đất bãi đỗ xe,4,21,DAT_HTKT_Baidoxe,252,"102,102,102",hatch/page-21.svg#pl1-21-3
+pl1-21-4,Nghĩa trang,4,21,DAT_HTKT_Nghiatrang,251,"101,101,101",hatch/page-21.svg#pl1-21-4
+pl1-21-5,Hạ tầng kỹ thuật khác,4,21,DAT_HTKT_Hatangkhac,199,"28,19,88",hatch/page-21.svg#pl1-21-5
+pl1-21-6,Sản xuất nông nghiệp,4,21,DAT_NN_Nongnghiep,3,"0,255,0",hatch/page-21.svg#pl1-21-6
+pl1-21-7,Rừng đặc dụng,4,21,DAT_NN_Rungdacdung,148,"0,28,38",hatch/page-21.svg#pl1-21-7
+pl1-21-8,Rừng phòng hộ,4,21,DAT_NN_Rungphongho,129,"19,88,88",hatch/page-21.svg#pl1-21-8
+pl1-21-9,Rừng sản xuất,4,21,DAT_NN_Rungsanxuat,107,"38,76,47",hatch/page-21.svg#pl1-21-9
+pl1-21-10,Nuôi trồng thủy sản,4,21,DAT_NN_Thuysan,150,"0,127,255",hatch/page-21.svg#pl1-21-10
+pl1-22-1,Chưa sử dụng,4,22,DAT_KHAC_Chuasudung,9,"192,192,192",hatch/page-22.svg#pl1-22-1
+pl1-22-2,"Hồ, ao, đầm",4,22,DAT_KHAC_Honuoc,154,"0,63,127",hatch/page-22.svg#pl1-22-2
+pl1-22-3,"Sông, suối, kênh, rạch",4,22,DAT_KHAC_Songsuoi,152,"0,82,165",hatch/page-22.svg#pl1-22-3
+pl1-22-4,Mặt nước ven biển,4,22,DAT_KHAC_Matnuocbien,152,"0,82,165",hatch/page-22.svg#pl1-22-4
+pl1-26-1,Đất nhà ở liên kế,5,26,DAT_NO_Nhaolienke,32,"165,82,0",hatch/page-26.svg#pl1-26-1
+pl1-26-2,Đất nhà ở biệt thự,5,26,DAT_NO_Nhaobietthu,56,"76,76,0",hatch/page-26.svg#pl1-26-2
+pl1-26-3,Đất nhà chung cư,5,26,DAT_NO_Nhaochungcu,40,"255,191,0",hatch/page-26.svg#pl1-26-3
+pl1-26-4,Đất nhà chung cư hỗn hợp,5,26,DAT_NO_NhaochungcuHH,44,"127,95,0",hatch/page-26.svg#pl1-26-4
+pl1-26-5,"Đất nhà ở nông thôn, nhà ở làng xóm đô thị hóa",5,26,DAT_NO_Nhaonongthon,57,"76,76,38",hatch/page-26.svg#pl1-26-5
+pl1-26-6,Đất văn hóa,5,26,DAT_CTHTXH_Vanhoa,243,"165,82,103",hatch/page-26.svg#pl1-26-6
+pl1-26-7,Đất y tế,5,26,DAT_CTHTXH_Yte,220,"255,0,191",hatch/page-26.svg#pl1-26-7
+pl1-26-8,Trường THPT,5,26,DAT_CTHTXH_TruongTHPT,24,"127,31,0",hatch/page-26.svg#pl1-26-8
+pl1-26-9,"Trường THCS, tiểu học, mầm non",5,26,DAT_CTHTXH_Truonghoc,15,"127,63,63",hatch/page-26.svg#pl1-26-9
+pl1-27-1,Đất thể dục thể thao,5,27,DAT_CTHTXH_Theducthethao,94,"0,127,0",hatch/page-27.svg#pl1-27-1
+pl1-27-2,Đất cây xanh sử dụng công cộng,5,27,DAT_CTHTXH_CayxanhCC,72,"82,165,0",hatch/page-27.svg#pl1-27-2
+pl1-27-3,Đất thương mại,5,27,DAT_CTHTXD_ThuongmaiDV,12,"165,0,0",hatch/page-27.svg#pl1-27-3
+pl1-27-4,"Đất công trình sản xuất công nghiệp, TTCN, kho tàng",5,27,DAT_CTSX_Congnghiep,192,"82,0,165",hatch/page-27.svg#pl1-27-4
+pl1-27-5,"Đất trung tâm nghiên cứu, đào tạo",5,27,DAT_CT_Daotaonghiencuu,144,"0,95,127",hatch/page-27.svg#pl1-27-5
+pl1-27-6,"Đất cơ quan, trụ sở",5,27,DAT_CT_Coquan,34,"127,63,0",hatch/page-27.svg#pl1-27-6
+pl1-27-7,Đất công trình dịch vụ,5,27,DAT_CT_Dichvu,12,"165,0,0",hatch/page-27.svg#pl1-27-7
+pl1-27-8,Đất công trình dịch vụ du lịch,5,27,DAT_CT_Dulich,210,"255,0,255",hatch/page-27.svg#pl1-27-8
+pl1-27-9,"Đất di tích, tôn giáo",5,27,DAT_CT_Ditichtongiao,16,"76,0,0",hatch/page-27.svg#pl1-27-9
+pl1-27-10,Đất cây xanh sử dụng hạn chế,5,27,DAT_CT_Cayxanhhanche,94,"0,127,0",hatch/page-27.svg#pl1-27-10
+pl1-27-11,Đất cây xanh chuyên dụng,5,27,DAT_CT_Cayxanhchuyendung,126,"0,76,57",hatch/page-27.svg#pl1-27-11
+pl1-28-1,Đường giao thông,5,28,DAT_CTHTKT_DuongGT,251,"101,101,101",hatch/page-28.svg#pl1-28-1
+pl1-28-2,Đất bãi đỗ xe,5,28,DAT_CTHTKT_Baidoxe,252,"102,102,102",hatch/page-28.svg#pl1-28-2
+pl1-28-3,Đất nghĩa trang,5,28,DAT_CTHTKT_Nghiatrang,251,"101,101,101",hatch/page-28.svg#pl1-28-3
+pl1-28-4,Đất công trình hạ tầng kỹ thuật khác,5,28,DAT_CTHTKT_Hatangkhac,199,"28,19,88",hatch/page-28.svg#pl1-28-4
+pl1-28-5,Đất an ninh,5,28,DAT_CT_Anninh,64,"95,127,0",hatch/page-28.svg#pl1-28-5
+pl1-28-6,Đất quốc phòng,5,28,DAT_CT_Quocphong,79,"28,38,19",hatch/page-28.svg#pl1-28-6
+pl1-28-7,Đất sản xuất nông nghiệp,5,28,DAT_NLK_Nongnghiep,3,"0,255,0",hatch/page-28.svg#pl1-28-7
+pl1-28-8,Đất rừng đặc dụng,5,28,DAT_NLK_Rungdacdung,148,"0,28,38",hatch/page-28.svg#pl1-28-8
+pl1-28-9,Đất rừng phòng hộ,5,28,DAT_NLK_Rungphongho,129,"19,88,88",hatch/page-28.svg#pl1-28-9
+pl1-28-10,Đất rừng sản xuất,5,28,DAT_NLK_Rungsanxuat,107,"38,76,47",hatch/page-28.svg#pl1-28-10
+pl1-29-1,Đất nuôi trồng thủy sản,5,29,DAT_NLK_Thuysan,150,"0,127,255",hatch/page-29.svg#pl1-29-1
+pl1-29-2,Đất chưa sử dụng,5,29,DAT_NLK_Chuasudung,9,"192,192,192",hatch/page-29.svg#pl1-29-2
+pl1-29-3,"Hồ, ao, đầm",5,29,DAT_NLK_Honuoc,154,"0,63,127",hatch/page-29.svg#pl1-29-3
+pl1-29-4,"Sông, suối, kênh, rạch",5,29,DAT_NLK_Songsuoi,152,"0,82,165",hatch/page-29.svg#pl1-29-4
+pl1-29-5,Mặt nước ven biển,5,29,DAT_NLK_Matnuocbien,152,"0,82,165",hatch/page-29.svg#pl1-29-5
+pl1-32-1,Phát triển dân cư đô thị,6,32,DAT_KXD_Dancudothi,30,"255,127,0",hatch/page-32.svg#pl1-32-1
+pl1-32-2,Phát triển dân cư nông thôn,6,32,DAT_KXD_Dancunongthon,57,"76,76,38",hatch/page-32.svg#pl1-32-2
+pl1-32-3,Phát triển hỗn hợp,6,32,DAT_KXD_Honhop,22,"165,41,0",hatch/page-32.svg#pl1-32-3
+pl1-32-4,Dịch vụ công cộng,6,32,DAT_KXD_Dichvucongcong,1,"255,0,0",hatch/page-32.svg#pl1-32-4
+pl1-32-5,Cây xanh sử dụng công cộng,6,32,DAT_KXD_CayxanhCC,72,"82,165,0",hatch/page-32.svg#pl1-32-5
+pl1-32-6,Cây xanh sử dụng hạn chế,6,32,DAT_KXD_CayxanhSDHC,94,"0,127,0",hatch/page-32.svg#pl1-32-6
+pl1-32-7,Cây xanh chuyên dụng,6,32,DAT_KXD_CayxanhCD,126,"0,76,57",hatch/page-32.svg#pl1-32-7
+pl1-32-8,"Phát triển sản xuất công nghiệp, kho tàng",6,32,DAT_KXD_Congnghiep,192,"82,0,165",hatch/page-32.svg#pl1-32-8
+pl1-32-9,"Trung tâm đào tạo, nghiên cứu",6,32,DAT_KXD_Daotao,144,"0,95,127",hatch/page-32.svg#pl1-32-9
+pl1-33-1,"Cơ quan, trụ sở đô thị",6,33,DAT_KXD_Coquantruso,34,"127,63,0",hatch/page-33.svg#pl1-33-1
+pl1-33-2,Trung tâm y tế,6,33,DAT_KXD_Yte,220,"255,0,191",hatch/page-33.svg#pl1-33-2
+pl1-33-3,"Trung tâm văn hóa, thể dục thể thao",6,33,DAT_KXD_Vanhoathethao,94,"0,127,0",hatch/page-33.svg#pl1-33-3
+pl1-33-4,"Dịch vụ, du lịch",6,33,DAT_KXD_Dulich,210,"255,0,255",hatch/page-33.svg#pl1-33-4
+pl1-33-5,"Di tích, tôn giáo",6,33,DAT_KXD_Ditich,16,"76,0,0",hatch/page-33.svg#pl1-33-5
+pl1-33-6,An ninh,6,33,DAT_KXD_Anninh,64,"95,127,0",hatch/page-33.svg#pl1-33-6
+pl1-33-7,Quốc phòng,6,33,DAT_KXD_Quocphong,79,"28,38,19",hatch/page-33.svg#pl1-33-7
+pl1-33-8,Giao thông,6,33,DAT_KXD_Giaothong,8,"128,128,128",hatch/page-33.svg#pl1-33-8
+pl1-33-9,Hạ tầng kỹ thuật khác,6,33,DAT_KXD_HTKTkhac,195,"95,63,127",hatch/page-33.svg#pl1-33-9
+pl1-33-10,Sản xuất nông nghiệp,6,33,DAT_NNK_Nongnghiep,3,"0,255,0",hatch/page-33.svg#pl1-33-10
+pl1-34-1,Rừng đặc dụng,6,34,DAT_NNK_Rungdacdung,148,"0,28,38",hatch/page-34.svg#pl1-34-1
+pl1-34-2,Rừng phòng hộ,6,34,DAT_NNK_Rungphongho,129,"19,88,88",hatch/page-34.svg#pl1-34-2
+pl1-34-3,Rừng sản xuất,6,34,DAT_NNK_Rungsanxuat,107,"38,76,47",hatch/page-34.svg#pl1-34-3
+pl1-34-4,Nuôi trồng thủy sản,6,34,DAT_NNK_Thuysan,150,"0,127,255",hatch/page-34.svg#pl1-34-4
+pl1-34-5,Chưa sử dụng,6,34,DAT_NNK_Chuasudung,9,"192,192,192",hatch/page-34.svg#pl1-34-5
+pl1-34-6,"Hồ, ao, đầm",6,34,DAT_NNK_Honuoc,154,"0,63,127",hatch/page-34.svg#pl1-34-6
+pl1-34-7,"Sông, suối, kênh, rạch",6,34,DAT_NNK_Songsuoi,152,"0,82,165",hatch/page-34.svg#pl1-34-7
+pl1-34-8,Mặt nước ven biển,6,34,DAT_NNK_Matnuocbien,152,"0,82,165",hatch/page-34.svg#pl1-34-8
+pl1-39-1,Đất trồng lúa,7,39,,3,"0,255,0",hatch/page-39.svg#pl1-39-1
+pl1-39-2,Đất trồng trọt khác,7,39,,94,"0,127,0",hatch/page-39.svg#pl1-39-2
+pl1-39-3,Đất rừng sản xuất,7,39,,107,"38,76,47",hatch/page-39.svg#pl1-39-3
+pl1-39-4,Đất rừng phòng hộ,7,39,,129,"19,88,88",hatch/page-39.svg#pl1-39-4
+pl1-39-5,Đất rừng đặc dụng,7,39,,148,"0,28,38",hatch/page-39.svg#pl1-39-5
+pl1-39-6,Đất nuôi trồng thủy sản,7,39,,144,"0,95,127",hatch/page-39.svg#pl1-39-6
+pl1-39-7,Đất làm muối,7,39,,126,"0,76,57",hatch/page-39.svg#pl1-39-7
+pl1-39-8,Đất nông nghiệp khác,7,39,,72,"82,165,0",hatch/page-39.svg#pl1-39-8
+pl1-40-1,Đất đơn vị ở hoặc khu dân cư,7,40,,57,"76,76,38",hatch/page-40.svg#pl1-40-1
+pl1-40-2,Đất công cộng,7,40,,1,"255,0,0",hatch/page-40.svg#pl1-40-2
+pl1-40-3,"Đất cây xanh, thể dục thể thao",7,40,,76,"38,76,0",hatch/page-40.svg#pl1-40-3
+pl1-40-4,"Đất tôn giáo, danh lam di tích, đình đền",7,40,,16,"76,0,0",hatch/page-40.svg#pl1-40-4
+pl1-40-5,"Đất công nghiệp, tiểu thủ công nghiệp và làng nghề",7,40,,192,"82,0,165",hatch/page-40.svg#pl1-40-5
+pl1-40-6,Đất khoáng sản và sản xuất vật liệu xây dựng,7,40,,177,"38,38,126",hatch/page-40.svg#pl1-40-6
+pl1-40-7,Đất xây dựng các chức năng khác,7,40,,34,"127,63,0",hatch/page-40.svg#pl1-40-7
+pl1-41-1,Đất xử lý chất thải rắn,7,41,,8,"128,128,128",hatch/page-41.svg#pl1-41-1
+pl1-41-2,"Đất nghĩa trang, nghĩa địa",7,41,,251,"101,101,101",hatch/page-41.svg#pl1-41-2
+pl1-41-3,Đất hạ tầng kỹ thuật khác,7,41,,195,"95,63,127",hatch/page-41.svg#pl1-41-3
+pl1-41-4,Đất hạ tầng phục vụ sản xuất,7,41,,203,"145,82,165",hatch/page-41.svg#pl1-41-4
+pl1-41-5,"Đất quốc phòng, an ninh",7,41,,69,"33,38,19",hatch/page-41.svg#pl1-41-5
+pl1-41-6,"Đất sông ngòi, kênh rạch, mặt nước chuyên dùng",7,41,,152,"0,82,165",hatch/page-41.svg#pl1-41-6
+pl1-41-7,Đất chưa sử dụng,7,41,,73,"124,165,82",hatch/page-41.svg#pl1-41-7
