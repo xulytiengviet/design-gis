@@ -1,0 +1,22 @@
+[
+  {
+    "id": "tt16-check",
+    "name": "Kiểm tra hồ sơ GIS quy hoạch",
+    "description": "Mở thư mục hồ sơ có File Geodatabase (.gdb) trong QGIS. Rà soát nhóm lớp, trường, hình học và hệ tọa độ theo bộ quy tắc Phụ lục II. Xuất HTML hoặc CSV để xử lý từng lỗi. Kết quả là báo cáo kỹ thuật của plugin.",
+    "file": "qgis/tt16_gis_check.zip",
+    "source": "https://github.com/lequynhhoa/TT16_GIS_Check/tree/ea20b08a7e400dfdf85376c3f5700bbc7b9d18d7"
+  },
+  {
+    "id": "inspect-crs",
+    "name": "Đối chiếu hệ tọa độ các lớp",
+    "description": "Mở dự án QGIS, liệt kê hệ quy chiếu của từng lớp, kiểm tra thông tin VN-2000, kinh tuyến trục và múi chiếu trước khi chồng lớp. Có thể xuất bảng đối chiếu ra CSV.",
+    "file": "qgis/QGIS_print_coordinate.zip",
+    "source": "https://github.com/lequynhhoa/QGIS_print_coordinate/tree/e3131674a1211f6779d6a2d3f462cfd54bdf2043"
+  },
+  {
+    "id": "font",
+    "name": "Chuyển nhãn tiếng Việt",
+    "description": "Dùng bảng chuyển TCVN3 của ThanhGIS cho chuỗi đã đọc theo bảng mã cũ. Chọn chế độ chữ hoa khi trường dùng font .VnTimeH. Với dữ liệu Unicode, chỉ chuẩn hóa NFC.",
+    "source": "https://github.com/thanhgis/QGIS-Vietnamese-Fonts-Converter/tree/e757f6d78c632edf5edf4ca35c6891b9f7a7d4e3"
+  }
+]

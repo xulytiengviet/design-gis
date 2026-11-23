@@ -25,6 +25,7 @@ An open source design system that's fully customizable and built for how we buil
 ## Design GIS · Bộ template quy hoạch Việt Nam
 
 [Bộ template, CLI và hướng dẫn chạy](gis/README.md) · [DWG](gis/cad/thu-vien.dwg) · [Bảng màu và mẫu tô](gis/data/land.csv). Atlas tra 178 dòng sử dụng đất theo tỷ lệ, giai đoạn và trang Phụ lục I. Hai template React hỗ trợ lập tên bản vẽ và tra block cấp nước.
+Tra [ký hiệu địa chính theo Phụ lục 22](gis/README.md#chọn-bộ-ký-hiệu-theo-sản-phẩm-cần-giao) và tải [công cụ QGIS](gis/qgis/README.md) để rà soát hồ sơ quy hoạch, đối chiếu CRS và chuyển nhãn TCVN3.
 
 ## Overview
 

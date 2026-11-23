@@ -327,3 +327,29 @@ nav a[aria-current] {
 td button:hover {
   text-decoration-color: var(--accent);
 }
+nav {
+  flex-wrap: wrap;
+}
+#convertTitle {
+  margin-top: 2rem;
+}
+#qgis textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+}
+#qgis label {
+  max-width: 50rem;
+  margin-top: 1rem;
+}
+@media (max-width: 760px) {
+  nav {
+    justify-content: flex-start;
+    gap: 0.4rem 1rem;
+  }
+}

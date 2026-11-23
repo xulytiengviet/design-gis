@@ -1,4 +1,12 @@
-import {sections, themes, fold, findLand, stages} from './api.mjs';
+import {
+  sections,
+  themes,
+  fold,
+  findLand,
+  findCadastral,
+  stages,
+} from './api.mjs';
+import {convertFont} from './qgis/font.mjs';
 const $ = id => document.getElementById(id);
 function el(tag, text) {
   const node = document.createElement(tag);
@@ -45,7 +53,9 @@ function showDetail(r) {
   $('detail').showModal();
 }
 function route() {
-  const id = ['cad', 'components'].includes(location.hash.slice(1))
+  const id = ['cad', 'components', 'dia-chinh', 'qgis'].includes(
+    location.hash.slice(1),
+  )
     ? location.hash.slice(1)
     : 'atlas';
   for (const section of document.querySelectorAll('main>section'))
@@ -58,8 +68,14 @@ function route() {
 addEventListener('hashchange', route);
 route();
 try {
-  const [land, components, settings] = await Promise.all(
-    ['data/land.json', 'data/components.json', 'settings.json'].map(read),
+  const [land, components, settings, cadastral, tools] = await Promise.all(
+    [
+      'data/land.json',
+      'data/components.json',
+      'settings.json',
+      'data/cadastral.json',
+      'data/qgis.json',
+    ].map(read),
   );
   for (const key of Object.keys(themes)) $('theme').add(new Option(key, key));
   const themeKey = 'design-gis:' + location.pathname;
@@ -142,6 +158,40 @@ try {
     );
     if (!found.length) $('cards').append(el('p', 'Không tìm thấy component.'));
   }
+  function renderCadastral() {
+    const rows = findCadastral(cadastral, $('dcQuery').value);
+    $('dcCount').textContent = rows.length + ' mục';
+    $('dcRows').replaceChildren(
+      ...rows.map(item => {
+        const row = el('tr'),
+          name = el('td', item.name),
+          source = el('td');
+        name.append(el('small', item.reference));
+        source.append(
+          link('Trang ' + item.page, 'sources/26-btnmt.pdf#page=' + item.page),
+        );
+        row.append(name, el('td', item.meaning), source);
+        return row;
+      }),
+    );
+  }
+  for (const tool of tools) {
+    const card = el('article');
+    card.append(el('h2', tool.name), el('p', tool.description));
+    if (tool.file) card.append(link('Tải ZIP cho QGIS', tool.file), el('br'));
+    card.append(link('Mã nguồn đối chiếu', tool.source));
+    $('qgisTools').append(card);
+  }
+  const renderFont = () => {
+    $('fontResult').value = convertFont(
+      $('fontInput').value,
+      $('fontMode').value,
+    );
+  };
+  $('fontMode').onchange = renderFont;
+  $('fontInput').oninput = renderFont;
+  $('dcQuery').oninput = renderCadastral;
+  renderCadastral();
   $('search').oninput = renderLand;
   $('scale').onchange = renderLand;
   $('componentQuery').oninput = renderComponents;

@@ -9,7 +9,8 @@
   <header>
     <div class="brand"><span aria-hidden="true">▧</span> Design GIS</div>
     <nav aria-label="Thư viện">
-      <a href="#atlas">Atlas ký hiệu</a><a href="#components">Component</a
+      <a href="#atlas">Quy hoạch</a><a href="#dia-chinh">Địa chính</a
+      ><a href="#qgis">QGIS</a><a href="#components">Component</a
       ><a href="#cad">CAD &amp; hồ sơ</a>
     </nav>
     <label class="theme"
@@ -22,7 +23,9 @@
       <p class="eyebrow">THƯ VIỆN BẢN ĐỒ / PHỤ LỤC I</p>
       <h1>Atlas ký hiệu quy hoạch</h1>
       <p class="intro">
-        Tra ý nghĩa, phân lớp và mẫu tô theo loại đồ án và giai đoạn quy hoạch.
+        Chọn cấp đồ án, tỷ lệ và giai đoạn để tra layer, Index Color và hatch
+        theo Phụ lục I của Thông tư 16/2025/TT-BXD. Khi lập bản đồ đo đạc thửa
+        đất, mở <a href="#dia-chinh">bộ ký hiệu địa chính</a>.
       </p>
       <div class="workspace">
         <aside>
@@ -58,6 +61,78 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="dia-chinh" hidden>
+      <p class="eyebrow">ĐO ĐẠC ĐỊA CHÍNH / PHỤ LỤC 22</p>
+      <h1>Ký hiệu bản đồ địa chính</h1>
+      <p class="intro">
+        Tra ranh giới, nhãn thửa và công trình theo Thông tư 26/2024/TT-BTNMT.
+        Khi thể hiện chức năng sử dụng đất trong đồ án, mở
+        <a href="#atlas">atlas quy hoạch</a>.
+      </p>
+      <div class="workspace">
+        <aside>
+          <h2>Tra trong Phụ lục 22</h2>
+          <label
+            >Tìm mục đã chú giải<input
+              id="dcQuery"
+              type="search"
+              placeholder="Nhãn thửa, nhà, I.3.d…"
+          /></label>
+          <p>
+            Kích thước và lực nét tính bằng mm. Nét mặc định 0,15 mm chỉ áp dụng
+            khi mẫu không ghi lực nét riêng.
+          </p>
+          <a href="sources/26-btnmt.pdf#page=91"
+            >Toàn bộ Phụ lục 22 · tr. 91–106</a
+          >
+          <p>
+            <a
+              href="https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/8/34-vbhn-bnnmt.pdf"
+              >Đối chiếu văn bản hợp nhất 34/VBHN-BNNMT</a
+            >
+          </p>
+        </aside>
+        <div class="sheet">
+          <div class="sheethead">
+            <h2>Các mục chọn lọc</h2>
+            <output id="dcCount" aria-live="polite"></output>
+          </div>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Đối tượng</th>
+                  <th scope="col">Cách đọc ký hiệu</th>
+                  <th scope="col">PDF gốc</th>
+                </tr>
+              </thead>
+              <tbody id="dcRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="qgis" hidden>
+      <p class="eyebrow">CÔNG CỤ QGIS</p>
+      <h1>Xử lý dữ liệu bản đồ</h1>
+      <p class="intro">
+        Trong QGIS, mở Plugins → Manage and Install Plugins → Install from ZIP
+        rồi chọn gói tải về. Công cụ chuyển mã văn bản chạy trực tiếp bên dưới.
+      </p>
+      <div id="qgisTools" class="cards"></div>
+      <h2 id="convertTitle">Chuyển mã nhãn</h2>
+      <label
+        >Bảng mã nguồn<select id="fontMode">
+          <option value="unicode">Unicode · chuẩn hóa NFC</option>
+          <option value="tcvn3">TCVN3 · .VnTime</option>
+          <option value="tcvn3-upper">TCVN3 · .VnTimeH (chữ hoa)</option>
+        </select></label
+      >
+      <label>Nhãn gốc<textarea id="fontInput" rows="3"></textarea></label
+      ><label
+        >Kết quả Unicode<textarea id="fontResult" readonly rows="3"></textarea>
+      </label>
     </section>
     <section id="components" hidden>
       <p class="eyebrow">ASTRYX / REACT</p>

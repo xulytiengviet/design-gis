@@ -54,3 +54,26 @@ Theo Điều 3 khoản 3 Thông tư 16/2025/TT-BXD, hồ sơ lồng ghép giải
 - [Thông tư 43/2025/TT-BXD, Điều 1 khoản 7](https://congbao.chinhphu.vn/tai-ve-van-ban-so-43-2025-tt-bxd-46838-60369?format=pdf)
 
 Tên đất tại Mục 7 trong danh mục áp dụng cập nhật thuật ngữ của Thông tư 43. Ảnh mẫu và hai PDF phản ánh bản gốc ban hành kèm Thông tư 16.
+
+## Chọn bộ ký hiệu theo sản phẩm cần giao
+
+| Công việc | Căn cứ tra cứu | Cách đọc |
+| --- | --- | --- |
+| Đo đạc lập bản đồ địa chính | TT26/2024/TT-BTNMT, Phụ lục 22 | Đọc số thửa, diện tích, loại đất và mẫu nét. Ranh theo hiện trạng, giấy tờ, chỉ giới hoặc chỉnh lý có ý nghĩa riêng. Đối chiếu hồ sơ đăng ký khi xác định chủ thể có quyền. |
+| Lập bản vẽ quy hoạch đô thị và nông thôn | TT16/2025/TT-BXD, Phụ lục I | Chọn cấp đồ án, tỷ lệ, giai đoạn hiện trạng hoặc quy hoạch. Đọc layer, Index Color và hatch cùng nhau. |
+| Kiểm tra cấu trúc cơ sở dữ liệu quy hoạch | TT16/2025/TT-BXD, Phụ lục II | Đối chiếu nhóm dữ liệu, lớp, hình học và thuộc tính. Plugin đọc File Geodatabase và xuất báo cáo theo bộ quy tắc đi kèm. |
+
+Ví dụ, nhãn **ODT 18 / 421,1** trong mẫu địa chính cho biết loại đất, số thửa 18 và diện tích 421,1 m². Muốn biết chức năng được định hướng cho vị trí đó, chồng lớp đồ án có cùng hệ quy chiếu và đọc chú giải của đồ án. Khi in chồng lớp, giữ riêng tên nguồn, thời điểm và chú giải của từng bộ.
+
+- [PDF TT26 đính kèm, Phụ lục 22 bắt đầu ở trang 91](sources/26-btnmt.pdf#page=91)
+- [Bản hợp nhất về đo đạc địa chính 34/VBHN-BNNMT](https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/8/34-vbhn-bnnmt.pdf)
+- [Bản hợp nhất về quy hoạch 59/VBHN-BXD ngày 02/07/2026](https://vanban.chinhphu.vn/?classid=2629&docid=218798&pageid=27160)
+- [Mã nguồn tái sử dụng và giấy phép](qgis/README.md)
+
+Trang Địa chính và CLI cùng đọc 11 mục chọn lọc từ bản PDF được cung cấp. Trường `reference` dẫn đến điểm hoặc hàng trong phụ lục. Trường `page` mở đúng trang của PDF. Xem toàn bộ hình và tỷ lệ ở bản gốc. Trang QGIS và CLI đọc chung `data/qgis.json`. Lệnh chuyển mã trả văn bản Unicode.
+
+```sh
+node gis/cli.mjs cadastral "nhãn thửa"
+node gis/cli.mjs qgis
+node gis/cli.mjs font tcvn3 "ViÖt Nam"
+```

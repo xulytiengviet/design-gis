@@ -38,3 +38,11 @@ export function stages(section) {
   if (section === 5) return ['Hiện trạng', 'Quy hoạch'];
   return ['Hiện trạng', section === 7 ? 'Ngắn hạn' : 'Đợt đầu', 'Dài hạn'];
 }
+
+export function findCadastral(rows, query = '') {
+  const terms = fold(query).split(/\s+/);
+  return rows.filter(row => {
+    const text = fold([row.name, row.reference, row.meaning].join(' '));
+    return terms.every(term => text.includes(term));
+  });
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "reference": "I.3.a",
+    "name": "Ranh giới thửa theo hiện trạng",
+    "meaning": "Tên màu trong PDF là đen, trị số ghi (255, 255, 255). Khi hiển thị theo sRGB, trị số này cho màu trắng. Đối chiếu nền và bản in.",
+    "page": 91
+  },
+  {
+    "reference": "I.3.b",
+    "name": "Ranh giới sông, suối, kênh, rạch",
+    "meaning": "RGB (0, 255, 0) áp dụng cho ranh giới đối tượng thủy hệ chiếm đất không tạo thành thửa và tên đối tượng.",
+    "page": 91
+  },
+  {
+    "reference": "I.3.c",
+    "name": "Đường bình độ và ghi chú độ cao",
+    "meaning": "Văn bản gọi màu nâu, RGB (255, 117, 0).",
+    "page": 91
+  },
+  {
+    "reference": "I.3.d",
+    "name": "Ranh theo giấy tờ pháp lý, quy hoạch và chỉnh lý",
+    "meaning": "Ba trường hợp cùng dùng RGB (255, 0, 0). Cần đọc kiểu nét và chú giải để phân biệt.",
+    "page": 91
+  },
+  {
+    "reference": "III.5 · 1a",
+    "name": "Nhãn thửa đất",
+    "meaning": "Ví dụ trên mẫu ghi ODT, số thửa 18, diện tích 421,1 m². Nhãn thể hiện loại đất, số thửa và diện tích. Việc xác định người có quyền cần đối chiếu hồ sơ đăng ký.",
+    "page": 98
+  },
+  {
+    "reference": "III.5 · 1d",
+    "name": "Thửa có nhiều loại đất",
+    "meaning": "Mẫu ONT+CLN ghi hai loại đất trên cùng thửa. Dấu cộng trong nhãn không biểu thị chuyển mục đích.",
+    "page": 98
+  },
+  {
+    "reference": "III.5 · 1g",
+    "name": "Chỉnh lý tách thửa",
+    "meaning": "Ví dụ chia một thửa thành hai thửa mới số 30 và 31.",
+    "page": 98
+  },
+  {
+    "reference": "III.5 · 1h",
+    "name": "Chỉnh lý hợp thửa",
+    "meaning": "Ví dụ gộp thửa 30 và 31 thành thửa 50.",
+    "page": 98
+  },
+  {
+    "reference": "III.5 · 2a",
+    "name": "Nhà nằm trong ranh giới thửa",
+    "meaning": "Trên mẫu, b5 chỉ nhà bê tông năm tầng. Chữ thể hiện kết cấu, số đi kèm thể hiện số tầng.",
+    "page": 98
+  },
+  {
+    "reference": "III.5 · 2d",
+    "name": "Nhà chung tường, nhờ tường",
+    "meaning": "Xem từng mẫu cho tường bên trong thửa, tường trùng ranh và giới hạn đoạn tường.",
+    "page": 99
+  },
+  {
+    "reference": "III.5 · 3b",
+    "name": "Công trình bể chứa",
+    "meaning": "Chọn mẫu theo vị trí bể so với ranh thửa và tình trạng chung hoặc nhờ tường.",
+    "page": 99
+  }
+]

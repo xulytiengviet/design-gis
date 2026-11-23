@@ -2,7 +2,8 @@
 import {readFile, writeFile, cp, mkdir, rm} from 'node:fs/promises';
 import {resolve, relative, isAbsolute, sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {sections, themes, findLand, fold} from './api.mjs';
+import {sections, themes, findLand, findCadastral, fold} from './api.mjs';
+import {convertFont} from './qgis/font.mjs';
 const root = fileURLToPath(new URL('.', import.meta.url));
 const data = async file =>
   JSON.parse(await readFile(new URL(file, import.meta.url), 'utf8'));
@@ -16,7 +17,13 @@ try {
         context: sections[r.section],
       })),
     );
-  else if (cmd === 'component')
+  else if (cmd === 'cadastral')
+    print(findCadastral(await data('data/cadastral.json'), arg));
+  else if (cmd === 'qgis') print(await data('data/qgis.json'));
+  else if (cmd === 'font') {
+    if (!rest.length) throw Error('Cú pháp: font MODE "Văn bản"');
+    console.log(convertFont(rest.join(' '), arg));
+  } else if (cmd === 'component')
     print(
       (await data('data/components.json')).filter(c =>
         fold(c.name).includes(fold(arg)),
@@ -57,6 +64,7 @@ try {
         'data',
         'cad',
         'hatch',
+        'qgis',
         'sources',
         'README.md',
       ]) {
@@ -73,7 +81,7 @@ try {
     console.log(dest);
   } else if (cmd === 'help')
     console.log(
-      'design-gis create DIR | land [QUERY] [SECTION] | component [NAME] | blocks [QUERY] | themes | theme NAME',
+      'design-gis create DIR | land [QUERY] [SECTION] | cadastral [QUERY] | qgis | font MODE TEXT | component [NAME] | blocks [QUERY] | themes | theme NAME',
     );
   else throw Error('Lệnh không hợp lệ. Chạy help để xem cú pháp.');
 } catch (e) {
