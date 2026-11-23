@@ -1,0 +1,31 @@
+# The branch-based Pages build serves the dashboard and its local resources.
+# Keep framework sources and project documentation out of the Jekyll build.
+exclude:
+  - apps
+  - docs
+  - internal
+  - packages
+  - plugins
+  - scripts
+  - node_modules
+  - gis/tools
+  - AGENTS.md
+  - CLAUDE.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - IME_GUARD_DESIGN.md
+  - LICENSE
+  - README.md
+  - SECURITY.md
+  - crowdin.yml
+  - eslint.config.js
+  - package.json
+  - playwright.config.ts
+  - playwright.interaction.config.ts
+  - playwright.perf.config.ts
+  - pnpm-lock.yaml
+  - pnpm-workspace.yaml
+  - tsconfig.json
+  - vitest.config.ts
+  - vitest.global-setup.node.mjs
+  - vitest.setup.node.mjs
