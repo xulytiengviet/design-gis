@@ -53,9 +53,14 @@ function showDetail(r) {
   $('detail').showModal();
 }
 function route() {
-  const id = ['atlas', 'cad', 'components', 'dia-chinh', 'qgis'].includes(
-    location.hash.slice(1),
-  )
+  const id = [
+    'atlas',
+    'cad',
+    'components',
+    'dia-chinh',
+    'qgis',
+    'guide',
+  ].includes(location.hash.slice(1))
     ? location.hash.slice(1)
     : 'overview';
   for (const section of document.querySelectorAll('main>section'))
@@ -65,7 +70,31 @@ function route() {
     else a.removeAttribute('aria-current');
   }
 }
-addEventListener('hashchange', route);
+function setMenu(open) {
+  $('navToggle').setAttribute('aria-expanded', String(open));
+  $('siteNav').classList.toggle('menu-open', open);
+}
+$('navToggle').onclick = () =>
+  setMenu($('navToggle').getAttribute('aria-expanded') !== 'true');
+$('siteNav').addEventListener('click', () => setMenu(false));
+$('skip').onclick = event => {
+  event.preventDefault();
+  $('main').focus();
+};
+document.addEventListener('keydown', event => {
+  if (
+    event.key === 'Escape' &&
+    $('navToggle').getAttribute('aria-expanded') === 'true'
+  ) {
+    setMenu(false);
+    $('navToggle').focus();
+  }
+});
+addEventListener('hashchange', () => {
+  route();
+  setMenu(false);
+  $('main').focus();
+});
 route();
 try {
   const [land, components, settings, cadastral, tools, blocks] =

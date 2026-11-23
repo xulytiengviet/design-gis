@@ -77,3 +77,9 @@ node gis/cli.mjs cadastral "nhãn thửa"
 node gis/cli.mjs qgis
 node gis/cli.mjs font tcvn3 "ViÖt Nam"
 ```
+
+## Hướng dẫn trên giao diện
+
+Mở **Hướng dẫn** để thực hành đọc nhãn thửa ODT, tra mẫu nhà ở liên kế tỷ lệ 1/500, đối chiếu layer hạ tầng trên [GIS.vn](https://gis.vn/thu-vien-ky-hieu-gis) và chuẩn bị hồ sơ CAD/QGIS. Trên điện thoại và máy tính bảng, mở **Danh mục** để chuyển chuyên mục. Hình mặt cắt ngang ở trang đầu trích từ trang 54 của Phụ lục I, bấm số trang bên dưới hình để xem bản gốc.
+
+Thiết kế giao diện: **Long Ngo**. [Giấy phép MIT của mã giao diện](LICENSE.txt). Các thành phần kế thừa giữ thông tin tác giả và giấy phép tương ứng. Xem [nguồn các công cụ QGIS](qgis/README.md).

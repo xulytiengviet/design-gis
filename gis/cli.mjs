@@ -67,6 +67,7 @@ try {
         'qgis',
         'sources',
         'README.md',
+        'LICENSE.txt',
       ]) {
         await cp(resolve(root, file), resolve(dest, file), {
           recursive: true,

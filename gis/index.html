@@ -5,29 +5,48 @@
     content="width=device-width,initial-scale=1" />
   <title>Design GIS · Bảng điều khiển</title
   ><link rel="stylesheet" href="style.css" />
-  <a class="skip" href="#main">Đến nội dung</a>
+  <a class="skip" id="skip" href="#main">Đến nội dung</a>
   <header>
-    <div class="brand"><span aria-hidden="true">▧</span> Design GIS</div>
-    <nav aria-label="Thư viện">
+    <a class="brand" href="#overview"
+      ><span aria-hidden="true">▧</span> Design GIS</a
+    ><button id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      Danh mục ☰
+    </button>
+    <nav id="siteNav" aria-label="Thư viện">
       <a href="#overview">Tổng quan</a><a href="#atlas">Quy hoạch</a
       ><a href="#dia-chinh">Địa chính</a><a href="#qgis">QGIS</a
-      ><a href="#components">Component</a><a href="#cad">CAD &amp; hồ sơ</a>
+      ><a href="#components">Component</a><a href="#cad">CAD &amp; hồ sơ</a
+      ><a href="#guide">Hướng dẫn</a>
     </nav>
     <label class="theme"
-      >Theme
+      >Giao diện
       <select id="theme"></select></label
     ><button id="dark" aria-pressed="false">Chế độ tối</button>
   </header>
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section id="overview">
       <div class="dash-hero">
-        <p class="eyebrow">DESIGN GIS / VIỆT NAM</p>
-        <h1>Bảng điều khiển GIS</h1>
-        <p>
-          Tra cứu ký hiệu bản đồ, đối chiếu quy cách bản vẽ và chọn công cụ xử
-          lý hồ sơ.
-        </p>
-        <a class="hero-action" href="#atlas">Tra ký hiệu quy hoạch →</a>
+        <div class="hero-copy">
+          <p class="eyebrow">KIẾN TRÚC / QUY HOẠCH / ĐỊA CHÍNH</p>
+          <h1>Thư viện bản vẽ GIS</h1>
+          <p>
+            Từ nhãn thửa đất đến mặt cắt đường phố. Tra mẫu ký hiệu, đọc đúng tỷ
+            lệ và đối chiếu bản vẽ gốc.
+          </p>
+          <div class="hero-links">
+            <a class="hero-action" href="#atlas">Mở atlas quy hoạch →</a
+            ><a href="#guide">Hướng dẫn sử dụng</a>
+          </div>
+        </div>
+        <figure class="plan">
+          <img
+            src="hatch/street-section.webp"
+            alt="Mặt cắt đường điển hình với cây xanh, chiếu sáng và các tuyến hạ tầng ngầm" />
+          <figcaption>
+            <span>Mặt cắt ngang đường</span
+            ><a href="sources/16-bxd-1.pdf#page=54">PL I · tr. 54 ↗</a>
+          </figcaption>
+        </figure>
       </div>
       <div
         id="metrics"
@@ -64,6 +83,9 @@
       </div>
       <article class="dash-panel sources">
         <h2>Tài liệu đối chiếu</h2>
+        <a href="https://gis.vn/thu-vien-ky-hieu-gis"
+          >GIS.vn · Thư viện ký hiệu và thông số GIS/Web ↗</a
+        >
         <a href="sources/16-bxd-1.pdf">Phụ lục I · Ký hiệu quy hoạch</a>
         <a href="sources/16-bxd-2.pdf">Phụ lục II · Cơ sở dữ liệu quy hoạch</a>
         <a href="sources/26-btnmt.pdf#page=91"
@@ -266,8 +288,105 @@
         </article>
       </div>
     </section>
+    <section id="guide" hidden>
+      <p class="eyebrow">SỔ TAY / THỰC HÀNH</p>
+      <h1>Hướng dẫn khai thác</h1>
+      <p class="intro">
+        Bắt đầu từ sản phẩm cần lập. Cùng một vị trí có thể xuất hiện trên bản
+        đồ địa chính và bản vẽ quy hoạch với hai chú giải khác nhau.
+      </p>
+      <div class="guide-grid">
+        <article>
+          <p class="eyebrow">ĐO ĐẠC ĐỊA CHÍNH</p>
+          <h2>Đọc một nhãn thửa</h2>
+          <ol>
+            <li>Mở Địa chính và tìm “nhãn thửa”.</li>
+            <li>Trong mẫu ODT, đọc riêng số thửa 18 và diện tích 421,1 m².</li>
+            <li>
+              Mở trang 98 để so nét ranh và cách đặt nhãn theo Phụ lục 22 của
+              TT26/2024/TT-BTNMT.
+            </li>
+          </ol>
+          <a href="#dia-chinh">Tra ký hiệu địa chính →</a>
+        </article>
+        <article>
+          <p class="eyebrow">QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN</p>
+          <h2>Chọn mẫu cho bản vẽ 1/500</h2>
+          <ol>
+            <li>Mở Quy hoạch và chọn đồ án chi tiết 1/500.</li>
+            <li>
+              Tìm “nhà ở liên kế”, mở tên loại đất và so mẫu hiện trạng với quy
+              hoạch.
+            </li>
+            <li>
+              Đọc layer, Index Color và trang nguồn. Kiểm tra hình tô trong Phụ
+              lục I của TT16/2025/TT-BXD trước khi thiết lập CAD.
+            </li>
+          </ol>
+          <a href="#atlas">Tra ký hiệu quy hoạch →</a>
+        </article>
+        <article>
+          <p class="eyebrow">THƯ VIỆN GIS.VN</p>
+          <h2>Đối chiếu layer và kiểu nét</h2>
+          <ol>
+            <li>
+              Trong thư viện GIS.vn, tìm theo tên đối tượng hoặc layer, ví dụ
+              HTKT_TH_Thoatnuoc.
+            </li>
+            <li>
+              Chọn giai đoạn phù hợp. HT_ là hiện trạng, QHDD_ là đợt đầu và
+              QHDH_ là dài hạn.
+            </li>
+            <li>
+              Mở chi tiết để xem hình, hatch và linetype. Đối chiếu Mục 8 khi
+              dựng tuyến hạ tầng hoặc mặt cắt đường.
+            </li>
+          </ol>
+          <a href="https://gis.vn/thu-vien-ky-hieu-gis">Mở thư viện GIS.vn ↗</a>
+          · <a href="sources/16-bxd-1.pdf#page=43">Mục 8</a>
+        </article>
+        <article>
+          <p class="eyebrow">BÀN GIAO HỒ SƠ</p>
+          <h2>Từ bản vẽ đến QGIS</h2>
+          <ol>
+            <li>
+              Chọn block cho điểm, polyline cho tuyến và đường biên khép kín cho
+              vùng. Đặt màu và kiểu nét theo layer.
+            </li>
+            <li>
+              Đặt tên tệp theo mẫu QH05-SO DO DINH HUONG PHAT TRIEN KHONG
+              GIAN.dwg.
+            </li>
+            <li>
+              Kiểm tra hệ tọa độ các lớp trước khi chồng ghép. Với hồ sơ quy
+              hoạch dạng File Geodatabase, chạy bộ kiểm tra Phụ lục II và đọc
+              từng lỗi trong báo cáo.
+            </li>
+          </ol>
+          <a href="#cad">Mở thư viện CAD</a> ·
+          <a href="#qgis">Mở công cụ QGIS</a>
+        </article>
+      </div>
+      <div class="dash-panel sources">
+        <h2>Văn bản hợp nhất để đối chiếu</h2>
+        <a
+          href="https://vanban.chinhphu.vn/?classid=0&amp;docid=214906&amp;pageid=27160"
+          >Đo đạc lập bản đồ địa chính · 34/VBHN-BNNMT</a
+        ><a
+          href="https://vanban.chinhphu.vn/?classid=2629&amp;docid=218798&amp;pageid=27160"
+          >Quy hoạch đô thị và nông thôn · 59/VBHN-BXD</a
+        >
+      </div>
+    </section>
     <p role="alert" id="error"></p>
   </main>
+  <footer>
+    <strong>Design GIS</strong><span>Thiết kế giao diện · Long Ngo</span
+    ><a href="LICENSE.txt">Mã nguồn giao diện · MIT</a
+    ><a href="https://github.com/xulytiengviet/design-gis/tree/main/gis/qgis"
+      >Nguồn và giấy phép QGIS</a
+    >
+  </footer>
   <dialog id="detail" aria-labelledby="detailTitle">
     <form method="dialog">
       <button aria-label="Đóng chi tiết">Đóng ×</button>
